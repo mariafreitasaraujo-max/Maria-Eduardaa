@@ -1,5 +1,24 @@
-<main>
-<h2>Meu primeiro post</h2>
-<p>Por: Marcelo Paludetto</p>
-<p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de tecnologia.</p>
-</main>
+function botaoClicado() {
+let texto = botao.querySelector("span");
+texto.textContent++;
+}botoes.forEach(function(botao) {
+botao.addEventListener("click", botaoClicado);
+
+function botaoClicado() {
+console.log("fui clicado");
+let texto = botao.querySelector("span");
+texto.textContent++;
+}
+});
+
+botoes.forEach(function (botao) {
+let curtiu = false;
+
+botao.addEventListener("click", botaoClicado);
+
+function botaoClicado() {
+console.log("fui clicado");
+let texto = botao.querySelector("span");
+texto.textContent++;
+}
+});
